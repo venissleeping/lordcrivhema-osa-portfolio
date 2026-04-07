@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khino's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-buttons">
+        <a href="#" class="btn btn-info" onclick="showPage('info')">About Me</a>
+        <a href="#" class="btn btn-quiz" onclick="showPage('quizzes')">Quizzes</a>
+        <a href="#" class="btn btn-exam" onclick="showPage('exam')">Exam</a>
+        <a href="#" class="btn btn-lab" onclick="showPage('lab')">Labs</a>
+    </div>
+</nav>
+<div class="profile-box" id="home-page">
+    <p>Welcome to my portfolio!</p>
+    <img src="543452945_2749780805413320_116648224109702832_n.jpg" alt="Lord Crivhen D. Mañosa" class="profile-pic">
+    <div id="name">Lord Crivhen D. Mañosa</div>
+</div>
+    </div>
+<div class="page-content" id="info">
+    <a href="#" class="back-btn" onclick="showHome()">← Back to Home</a>
+    <h2>Khino's Info</h2>
+   <p>Lord Crivhen D. Mañosa AKA "Khino" is a 19-year-old aspiring software developer with a passion for technology and innovation. He is currently pursuing a degree in Computer Science at the Cavite State University Silang Campus ,Khino has developed several applications and websites that showcase his skills and creativity. He is eager to contribute to the tech industry and is always looking for opportunities to learn and grow as a developer.</p>
+</div>
+
+   <div class="page-content" id="quizzes">
+    <a href="#" class="back-btn" onclick="showHome()">← Back to Home</a>
+    <h2>Quiz Upload</h2>
+<div style="margin-bottom: 30px;">
+    <img src="quiz1.jpg" alt="Quiz 1" class="form-image">
+    <p class="quiz-name">Quiz 1</p>
+    <img src="quiz2.jpg" alt="Quiz 2" class="form-image">
+    <p class="quiz-name">Quiz 2</p>
+</div>
+
+
+<form class="upload-form" id="quizForm">
+    <div class="form-group">
+        <label>New Quiz Title</label>
+        <input type="text" placeholder="Enter quiz name" required>
+    </div>
+    <div class="form-group">
+        <label>Quiz File (PDF)</label>
+        <input type="file" accept=".pdf" required>
+    </div>
+    <div class="form-group">
+        <label>Proof Image</label>
+        <input type="file" accept="image/*">
+    </div>
+    <button type="button" class="upload-btn" onclick="handleFileUpload('quizForm')">
+        Upload Quiz
+    </button>
+    <div class="file-preview"></div>
+</form>
+
+</div>
+<div class="page-content" id="exam">
+    <a href="#" class="back-btn" onclick="showHome()">← Back to Home</a>
+    <h2>Exam Upload</h2>
+<form class="upload-form" id="examForm">
+    <div class="form-group">
+        <label>Exam Title</label>
+        <input type="text" placeholder="Enter exam name" required>
+    </div>
+    <div class="form-group">
+        <label>Exam File (PDF)</label>
+        <input type="file" accept=".pdf" required>
+    </div>
+    <div class="form-group">
+        <label>Proof Image</label>
+        <input type="file" accept="image/*">
+    </div>
+    <button type="button" class="upload-btn" onclick="handleFileUpload('examForm')">
+         Upload Exam
+    </button>
+    <div class="file-preview"></div>
+</form>
+
+</div>
+<div class="page-content" id="lab">
+    <a href="#" class="back-btn" onclick="showHome()">← Back to Home</a>
+    <h2> Lab Upload</h2>
+<form class="upload-form" id="labForm">
+    <div class="form-group">
+        <label>Lab Title</label>
+        <input type="text" placeholder="Enter lab name" required>
+    </div>
+    <div class="form-group">
+        <label>Lab File (PDF/ZIP)</label>
+        <input type="file" accept=".pdf,.zip" required>
+    </div>
+    <div class="form-group">
+        <label>Proof Image</label>
+        <input type="file" accept="image/*">
+    </div>
+    <button type="button" class="upload-btn" onclick="handleFileUpload('labForm')">
+         Upload Lab
+    </button>
+    <div class="file-preview"></div>
+</form>
+
+</div>
+<script src="function.js"></script>
+
+</body>
+</html>
