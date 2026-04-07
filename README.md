@@ -1,1 +1,0 @@
-# lordcrivhema-osa-portfolio
